@@ -6,7 +6,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 
 export default function LoginForm() {
   const searchParams = useSearchParams();
-  const router = useRouter(); // Adicione o useRouter
+  const router = useRouter();
   const error = searchParams.get('error');
 
   async function login(e: React.FormEvent<HTMLFormElement>) {

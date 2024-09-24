@@ -24,13 +24,13 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <body className={`antialiased`}>
-          <Header />
-          {children}
-          <Footer />
-          <WhatsBtn />
-        </body>
       </head>
+      <body className={`antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+        <WhatsBtn />
+      </body>
     </html>
   );
 }
