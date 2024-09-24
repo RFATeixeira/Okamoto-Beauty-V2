@@ -22,12 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`antialiased`}>
-        <Header />
-        {children}
-        <Footer />
-        <WhatsBtn />
-      </body>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <body className={`antialiased`}>
+          <Header />
+          {children}
+          <Footer />
+          <WhatsBtn />
+        </body>
+      </head>
     </html>
   );
 }
