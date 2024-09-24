@@ -13,16 +13,20 @@ export default function LoginForm() {
   async function login(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-
     const data = {
       user: formData.get('user'),
       password: formData.get('password'),
     };
 
-    signIn('credentials', {
+    const result = await signIn('credentials', {
       ...data,
       callbackUrl: '/dashboard',
+      redirect: false,
     });
+
+    if (result?.error) {
+      console.error('Login Error:', result.error);
+    }
   }
 
   return (

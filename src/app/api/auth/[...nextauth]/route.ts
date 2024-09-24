@@ -7,7 +7,7 @@ const users = [
     id: '1',
     name: 'Raphael Teixeira',
     user: 'rfateixeira',
-    password: 'Raik04sonuty!',
+    password: '3dit0rP1kauty!',
   },
   {
     id: '2',

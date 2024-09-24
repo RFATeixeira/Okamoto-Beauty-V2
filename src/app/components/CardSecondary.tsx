@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface CardSecondary {
@@ -26,10 +27,12 @@ const CardSecondary: React.FC<CardSecondary> = ({
   return (
     <div className="w-full min-w-[340px] max-w-[340px] bg-white rounded-3xl flex flex-col drop-shadow-2xl p-4 gap-3 h-full">
       <div className="h-[170px] overflow-hidden rounded-2xl drop-shadow-2xl">
-        <img
+        <Image
           src={linkImage}
           alt="woman"
           className="object-cover h-full w-full"
+          width={500}
+          height={500}
         />
       </div>
       <div

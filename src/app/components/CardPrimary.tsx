@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -18,10 +19,12 @@ const CardPrimary: React.FC<CardPrimary> = ({
     <div className="h-[320px] w-full max-w-[340px] drop-shadow-xl group">
       <Link href={refPage} className="w-full items-center justify-center flex">
         <div className="p-2 bg-white rounded-3xl overflow-hidden h-[262px] w-full group-hover:bg-brand-pink/80 transition duration-500">
-          <img
+          <Image
             src={linkImage}
             alt={title}
             className="rounded-2xl object-cover overflow-hidden h-full w-full"
+            width={500}
+            height={500}
           />
         </div>
         <div className="flex flex-col w-full max-w-[280px] p-2 absolute bottom-0">

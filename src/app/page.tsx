@@ -47,8 +47,8 @@ export default function Home() {
       <section className="w-full">
         <div className="py-[33px] text-dark-10 text-center flex flex-col items-center">
           <p className="text-lg font-medium leading-5 px-4 sm:w-[500px]">
-            "Possibilitar a felicidade através de unhas bem feitas é meu maior
-            desejo."
+            Possibilitar a felicidade através de unhas bem feitas é meu maior
+            desejo.
           </p>
           <div className="mt-[15px] bg-brand-pink rounded-full w-[31px] h-[31px]"></div>
           <p className="pt-[15px] text-lg px-10 leading-5 sm:w-[400px]">

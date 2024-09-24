@@ -75,13 +75,15 @@ export default function Header() {
               <button className="p-1 md:hidden" onClick={openMenu}>
                 <MenuIcon className="fill-black w-8 h-8" />
               </button>
-              <Image
-                src="/logo.svg"
-                alt="Logo"
-                width={28}
-                height={28}
-                unoptimized
-              />
+              <a href="/login">
+                <Image
+                  src="/logo.svg"
+                  alt="Logo"
+                  width={28}
+                  height={28}
+                  unoptimized
+                />
+              </a>
             </div>
           </div>
         </div>
