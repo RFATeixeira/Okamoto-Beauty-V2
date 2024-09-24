@@ -4,7 +4,6 @@ import { useParams } from 'next/navigation';
 import servicesData from '../../../../data/services.json';
 import CardSecondary from '../../components/CardSecondary';
 
-// Definindo as interfaces
 interface Treatment {
   linkImage: string;
   title: string;
@@ -29,20 +28,16 @@ interface ServicesData {
 }
 
 const ServicePage: React.FC = () => {
-  const { serviceId } = useParams(); // Acessando serviceId aqui
+  const { serviceId } = useParams();
 
-  // Define os IDs válidos
   const validServiceIds: Array<keyof ServicesData> = ['hand', 'foot', 'pack'];
 
-  // Verifique se serviceId é uma string e se é um ID válido
   if (!validServiceIds.includes(serviceId as keyof ServicesData)) {
     return <div>Serviço não encontrado</div>;
   }
 
-  // Acessando os dados do serviço de forma segura
   const serviceCategory = servicesData[serviceId as keyof ServicesData];
 
-  // Verificando se a categoria de serviço existe
   if (!serviceCategory) return <div>Serviço não encontrado</div>;
 
   const cards = [
@@ -70,10 +65,10 @@ const ServicePage: React.FC = () => {
   ];
 
   const getGridClasses = (numCards: number): string => {
-    if (numCards === 1) return 'grid-cols-1'; // 1 card
-    if (numCards === 2) return 'grid-cols-1 md:grid-cols-2'; // 2 cards
-    if (numCards === 3) return 'lg:grid-cols-3 md:grid-cols-2 grid-cols-1'; // 3 cards: 1 coluna em dispositivos móveis, 2 em tablets
-    return '2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1'; // 4 ou mais cards: 1 coluna em dispositivos móveis, 2 em tablets
+    if (numCards === 1) return 'grid-cols-1';
+    if (numCards === 2) return 'grid-cols-1 md:grid-cols-2';
+    if (numCards === 3) return 'lg:grid-cols-3 md:grid-cols-2 grid-cols-1';
+    return '2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1';
   };
   return (
     <div>

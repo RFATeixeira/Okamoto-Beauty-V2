@@ -1,13 +1,12 @@
 'use client';
 
 import { signIn } from 'next-auth/react';
-
 import Button from './Button';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 export default function LoginForm() {
   const searchParams = useSearchParams();
-
+  const router = useRouter(); // Adicione o useRouter
   const error = searchParams.get('error');
 
   async function login(e: React.FormEvent<HTMLFormElement>) {
@@ -26,6 +25,8 @@ export default function LoginForm() {
 
     if (result?.error) {
       console.error('Login Error:', result.error);
+    } else {
+      router.push('/dashboard');
     }
   }
 
