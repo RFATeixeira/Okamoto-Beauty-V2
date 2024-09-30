@@ -70,12 +70,12 @@ export default function Header() {
                 </li>
               </ul>
             </div>
-            <div className="flex gap-4 md:ml-4">
+            <div className="flex gap-4 md:ml-4  items-center">
               <Menu isVisible={isMenuOpen} onClose={closeMenu} />
               <button className="p-1 md:hidden" onClick={openMenu}>
                 <MenuIcon className="fill-black w-8 h-8" />
               </button>
-              <a href="/login">
+              <a href="/dashboard">
                 <Image
                   src="/logo.svg"
                   alt="Logo"

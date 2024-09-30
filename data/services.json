@@ -2,16 +2,19 @@
   "hand": {
     "title": "Tratamentos para as Mãos",
     "description": "Confira todos os serviços para suas mãos.",
-    "treatments": [
+    "services": [
       {
         "linkImage": "/unha2.png",
         "title": "Simples",
         "title2": "Esmaltação e Cuticulagem",
         "desc1": "Esmaltação: É o processo de aplicar esmalte nas unhas, incluindo a preparação das unhas, aplicação de base e esmalte colorido.",
         "desc2": "Cuticulagem: Envolve o cuidado das cutículas, como amolecer, empurrar delicadamente e remover o excesso de pele.",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20as%20m%C3%A3os!",
         "cost": 35,
-        "time": "45 Minutos"
+        "time": "45 Minutos",
+        "id": 1
       },
       {
         "linkImage": "/unha1.png",
@@ -19,25 +22,31 @@
         "title2": "Esmaltação em Gel e Cuticulagem",
         "desc1": "A esmaltação em gel envolve a aplicação de um esmalte especial em gel nas unhas, que é endurecido sob uma lâmpada UV ou LED.",
         "desc2": "Cuticulagem: Envolve o cuidado das cutículas, como amolecer, empurrar delicadamente e remover o excesso de pele.",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20as%20m%C3%A3os%20em%20gel!",
         "cost": 50,
-        "time": "45 Minutos"
+        "time": "45 Minutos",
+        "id": 2
       }
     ]
   },
   "foot": {
     "title": "Tratamentos para os Pés",
     "description": "Confira todos os serviços para seus pés.",
-    "treatments": [
+    "services": [
       {
         "linkImage": "/unha4.png",
         "title": "Simples",
         "title2": "Esmaltação e Cuticulagem",
         "desc1": "Esmaltação: É o processo de aplicar esmalte nas unhas, incluindo a preparação das unhas, aplicação de base e esmalte colorido.",
         "desc2": "Cuticulagem: Envolve o cuidado das cutículas, como amolecer, empurrar delicadamente e remover o excesso de pele.",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20os%20p%C3%A9s!",
         "cost": 35,
-        "time": "45 Minutos"
+        "time": "45 Minutos",
+        "id": 1
       },
       {
         "linkImage": "/unha6.png",
@@ -45,9 +54,12 @@
         "title2": "Esmaltação em Gel e Cuticulagem",
         "desc1": "A esmaltação em gel envolve a aplicação de um esmalte especial em gel nas unhas, que é endurecido sob uma lâmpada UV ou LED.",
         "desc2": "Cuticulagem: Envolve o cuidado das cutículas, como amolecer, empurrar delicadamente e remover o excesso de pele.",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20os%20p%C3%A9s%20em%20gel!",
         "cost": 50,
-        "time": "45 Minutos"
+        "time": "45 Minutos",
+        "id": 2
       },
       {
         "linkImage": "/spa-dos-pes.jpg",
@@ -55,9 +67,12 @@
         "title2": "Higienização, Esfoliação e Hidratação",
         "desc1": "O spa dos pés é um tratamento que visa melhorar a saúde e a aparência dos pés através de técnicas de massagem, esfoliação, hidratação e outras terapias relaxantes.",
         "desc2": "Consiste em imergir os pés em água morna, esfoliar e hidratar, acompanhando massagens relaxantes.",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20spa%20dos%20p%C3%A9s!",
         "cost": 85,
-        "time": "60 Minutos"
+        "time": "60 Minutos",
+        "id": 3
       },
       {
         "linkImage": "/podologia.jpg",
@@ -65,16 +80,19 @@
         "title2": "Podologia",
         "desc1": "A podologia é uma especialidade da área da saúde que se dedica ao estudo, diagnóstico, prevenção e tratamento das doenças e disfunções dos pés.",
         "desc2": "O profissional é treinado para lidar com uma ampla gama de condições que afetam os pés, desde problemas comuns até doenças mais complexas.",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20tratamento%20de%20podologia!",
         "cost": 85,
-        "time": "60 Minutos"
+        "time": "60 Minutos",
+        "id": 4
       }
     ]
   },
   "pack": {
     "title": "Pacotes",
     "description": "Confira todos os pacotes disponíveis.",
-    "treatments": [
+    "services": [
       {
         "linkImage": "/unha5.png",
         "title": "Pacote",
@@ -82,9 +100,11 @@
         "desc1": "4x: Mãos",
         "desc2": "2x: Pés",
         "desc3": "1x: Spa dos Pés",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20pacote!",
         "cost": 150,
-        "time": "90 Minutos"
+        "time": "90 Minutos",
+        "id": 1
       },
       {
         "linkImage": "/unha6.png",
@@ -92,9 +112,12 @@
         "title2": "Esmaltação Pé e Mão",
         "desc1": "1x: Pé",
         "desc2": "2x: Mão",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20pacote%20de%20p%C3%A9%20e%20m%C3%A3o!",
         "cost": 60,
-        "time": "60 Minutos"
+        "time": "60 Minutos",
+        "id": 2
       },
       {
         "linkImage": "/unha4.png",
@@ -102,9 +125,57 @@
         "title2": "Esmaltação Pé e Mão em Gel",
         "desc1": "1x: Mãos em Gel",
         "desc2": "2x: Pés em Gel",
+        "desc3": "",
+        "desc4": "",
         "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20pacote%20de%20p%C3%A9%20e%20m%C3%A3o%20em%20gel!",
         "cost": 100,
-        "time": "60 Minutos"
+        "time": "60 Minutos",
+        "id": 3
+      }
+    ]
+  },
+  "promo": {
+    "title": "Pacotes",
+    "description": "Confira todos os pacotes disponíveis.",
+    "services": [
+      {
+        "linkImage": "/unha5.png",
+        "title": "Pacote",
+        "title2": "Pacote Mãos e Pés",
+        "desc1": "4x: Mãos",
+        "desc2": "2x: Pés",
+        "desc3": "1x: Spa dos Pés",
+        "desc4": "",
+        "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20pacote!",
+        "cost": 150,
+        "time": "90 Minutos",
+        "id": 1
+      },
+      {
+        "linkImage": "/unha6.png",
+        "title": "Pé & Mão Simples",
+        "title2": "Esmaltação Pé e Mão",
+        "desc1": "1x: Pé",
+        "desc2": "2x: Mão",
+        "desc3": "",
+        "desc4": "",
+        "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20pacote%20de%20p%C3%A9%20e%20m%C3%A3o!",
+        "cost": 60,
+        "time": "60 Minutos",
+        "id": 2
+      },
+      {
+        "linkImage": "/unha4.png",
+        "title": "Pé & Mão Gel",
+        "title2": "Esmaltação Pé e Mão em Gel",
+        "desc1": "1x: Mãos em Gel",
+        "desc2": "2x: Pés em Gel",
+        "desc3": "",
+        "desc4": "",
+        "refPage": "https://wa.me/4484030462?text=Ol%C3%A1,%20tenho%20interesse%20em%20fazer%20o%20pacote%20de%20p%C3%A9%20e%20m%C3%A3o%20em%20gel!",
+        "cost": 100,
+        "time": "60 Minutos",
+        "id": 3
       }
     ]
   }

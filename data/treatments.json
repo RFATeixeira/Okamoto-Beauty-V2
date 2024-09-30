@@ -1,0 +1,36 @@
+{
+  "treatments": {
+    "title": "Tratamentos",
+    "description": "Oferecer a você os melhores serviços que podemos.",
+    "treatments": [
+      {
+        "linkImage": "/unha1.png",
+        "title": "Mãos",
+        "desc": "Confira todos os serviços para suas Mãos.",
+        "refPage": "/services/hand",
+        "id": 1
+      },
+      {
+        "linkImage": "/unha4.png",
+        "title": "Pé's",
+        "desc": "Confira todos os serviços para seus Pés.",
+        "refPage": "/services/foot",
+        "id": 2
+      },
+      {
+        "linkImage": "/unha5.png",
+        "title": "Pacotes",
+        "desc": "Confira todos os pacotes disponíveis.",
+        "refPage": "/services/pack",
+        "id": 3
+      },
+      {
+        "linkImage": "/unha5.png",
+        "title": "Promoções",
+        "desc": "Confira todos as promoções disponíveis.",
+        "refPage": "/services/pack",
+        "id": 4
+      }
+    ]
+  }
+}

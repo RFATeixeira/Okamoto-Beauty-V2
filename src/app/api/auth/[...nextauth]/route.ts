@@ -1,7 +1,6 @@
 import NextAuth, { User } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-// Defina um array de usuários com suas credenciais
 const users = [
   {
     id: '1',
@@ -27,14 +26,15 @@ const handler = NextAuth({
       name: 'Credentials',
       credentials: {
         user: {
-          label: 'User',
+          label: 'Usuário',
           type: 'text',
-          placeholder: 'jsmith',
+          placeholder: 'usuario.exemplo',
         },
-        password: { label: 'Password', type: 'password' },
+        password: { label: 'Senha', type: 'password' },
       },
       async authorize(credentials, req) {
         if (!credentials) {
+          console.log('No credentials provided');
           return null;
         }
 
@@ -44,6 +44,7 @@ const handler = NextAuth({
         );
 
         if (user) {
+          console.log('User authenticated:', user);
           return {
             id: user.id,
             name: user.name,
@@ -51,6 +52,7 @@ const handler = NextAuth({
           } as User;
         }
 
+        console.log('Authentication failed for:', credentials.user);
         return null;
       },
     }),

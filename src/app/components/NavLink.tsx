@@ -3,8 +3,8 @@ import React from 'react';
 
 interface NavLinkProps {
   text: string;
-  targetId?: string; // Torne opcional para permitir navegação de página
-  href: string; // Adicione um href para navegação
+  targetId?: string;
+  href: string;
   className?: string;
   onClick?: () => void;
 }
@@ -33,7 +33,7 @@ const NavLink: React.FC<NavLinkProps> = ({
     <Link
       href={href}
       className={className}
-      onClick={targetId ? scrollToSection : undefined}
+      onClick={targetId ? scrollToSection : onClick}
     >
       {text}
     </Link>

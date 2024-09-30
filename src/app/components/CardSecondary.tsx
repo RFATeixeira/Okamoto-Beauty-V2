@@ -8,6 +8,7 @@ interface CardSecondary {
   desc1: string;
   desc2?: string;
   desc3?: string;
+  desc4?: string;
   refPage: string;
   cost: number;
   time: string;
@@ -20,6 +21,7 @@ const CardSecondary: React.FC<CardSecondary> = ({
   desc1,
   desc2,
   desc3,
+  desc4,
   refPage,
   cost,
   time,
@@ -48,6 +50,8 @@ const CardSecondary: React.FC<CardSecondary> = ({
             {desc2}
             <br />
             {desc3}
+            <br />
+            {desc4}
           </p>
           <p className="text-black tracking-tight font-medium font-buttons">
             Tempo Estimado:

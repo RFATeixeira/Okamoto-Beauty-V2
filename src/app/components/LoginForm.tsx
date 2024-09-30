@@ -23,17 +23,20 @@ export default function LoginForm() {
       redirect: false,
     });
 
+    console.log('Login Result:', result); // Adicionado para debugging
+
     if (result?.error) {
       console.error('Login Error:', result.error);
+      router.push('/login?error=CredentialsSignin'); // Redireciona com erro
     } else {
-      router.push('/dashboard');
+      router.push('/dashboard'); // Redireciona para o dashboard
     }
   }
 
   return (
     <form
       onSubmit={login}
-      className="flex flex-col gap-4 px-8 py-12 bg-light-20 border-2 border-brand-pink w-full max-w-96 h-fit rounded-3xl justify-center items-center drop-shadow-2xl "
+      className="flex flex-col gap-4 px-8 py-12 bg-light-20 border-2 border-brand-pink w-full max-w-96 h-fit rounded-3xl justify-center items-center drop-shadow-2xl"
     >
       <p className="text-3xl font-semibold text-brand-pink">Login</p>
 

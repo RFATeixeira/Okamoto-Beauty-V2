@@ -9,7 +9,9 @@ interface Treatment {
   title: string;
   title2: string;
   desc1: string;
-  desc2: string;
+  desc2?: string;
+  desc3?: string;
+  desc4?: string;
   refPage: string;
   cost: number;
   time: string;
@@ -40,30 +42,6 @@ const ServicePage: React.FC = () => {
 
   if (!serviceCategory) return <div>Serviço não encontrado</div>;
 
-  const cards = [
-    {
-      id: 1,
-      title: 'Mãos',
-      description: 'Confira todos os serviços para suas mãos.',
-      linkImage: '/unha1.png',
-      refPage: '/services/hand',
-    },
-    {
-      id: 2,
-      title: 'Pés',
-      description: 'Confira todos os serviços para seus pés.',
-      linkImage: '/unha4.png',
-      refPage: '/services/foot',
-    },
-    {
-      id: 3,
-      title: 'Pacotes',
-      description: 'Confira todos os pacotes disponíveis.',
-      linkImage: '/unha5.png',
-      refPage: '/services/pack',
-    },
-  ];
-
   const getGridClasses = (numCards: number): string => {
     if (numCards === 1) return 'grid-cols-1';
     if (numCards === 2) return 'grid-cols-1 md:grid-cols-2';
@@ -88,7 +66,7 @@ const ServicePage: React.FC = () => {
                   : 'pacotes'}
             </h1>
             <p className="text-center text-xl leading-5 px-4">
-              Confira todos os serviços para{' '}
+              Confira todos os serviços para
               {serviceId === 'hand'
                 ? 'suas mãos'
                 : serviceId === 'foot'
@@ -99,19 +77,21 @@ const ServicePage: React.FC = () => {
           </div>
           <div className="flex justify-center">
             <div
-              className={`grid ${getGridClasses(serviceCategory.treatments.length)} mt-4 gap-y-14 gap-6 mx-5`}
+              className={`grid ${getGridClasses(serviceCategory.services.length)} mt-4 gap-y-14 gap-6 mx-5`}
             >
-              {serviceCategory.treatments.map((treatment, index) => (
+              {serviceCategory.services.map((services, index) => (
                 <CardSecondary
                   key={index}
-                  linkImage={treatment.linkImage}
-                  title={treatment.title}
-                  title2={treatment.title2}
-                  desc1={treatment.desc1}
-                  desc2={treatment.desc2}
-                  refPage={treatment.refPage}
-                  cost={treatment.cost}
-                  time={treatment.time}
+                  linkImage={services.linkImage}
+                  title={services.title}
+                  title2={services.title2}
+                  desc1={services.desc1}
+                  desc2={services.desc2}
+                  desc3={services.desc3}
+                  desc4={services.desc4}
+                  refPage={services.refPage}
+                  cost={services.cost}
+                  time={services.time}
                 />
               ))}
             </div>

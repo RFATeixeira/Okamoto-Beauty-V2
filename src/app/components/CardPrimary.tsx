@@ -7,6 +7,7 @@ interface CardPrimary {
   title: string;
   desc: string;
   refPage: string;
+  id: number;
 }
 
 const CardPrimary: React.FC<CardPrimary> = ({

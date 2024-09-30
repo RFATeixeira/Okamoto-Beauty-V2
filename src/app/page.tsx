@@ -1,6 +1,6 @@
 import Button from './components/Button';
-import CardPrimary from './components/CardPrimary';
 import Link from 'next/link';
+import CardsHome from './components/CardsHome';
 
 export default function Home() {
   return (
@@ -23,24 +23,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-3 mt-4 gap-y-14 gap-6 mx-10">
-            <CardPrimary
-              refPage="/services/hand"
-              linkImage={'/unha1.png'}
-              title="Mãos"
-              desc="Confira todos os serviços para suas Mãos."
-            />
-            <CardPrimary
-              refPage="/services/foot"
-              linkImage={'/unha4.png'}
-              title="Pé's"
-              desc="Confira todos os serviços para seus Pés."
-            />
-            <CardPrimary
-              refPage="/services/pack"
-              linkImage={'/unha5.png'}
-              title="Pacotes"
-              desc="Confira todos os pacotes disponíveis."
-            />
+            <CardsHome />
           </div>
         </div>
       </main>
